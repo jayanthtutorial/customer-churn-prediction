@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LtuBank.Business.Contract\LtuBank.Business.Contract.csproj" />
+    <ProjectReference Include="..\LtuBank.Business\LtuBank.Business.csproj" />
+    <ProjectReference Include="..\LtuBank.DataAccess.Contract\LtuBank.DataAccess.Contract.csproj" />
+    <ProjectReference Include="..\LtuBank.DataAccess\LtuBank.DataAccess.csproj" />
+    <ProjectReference Include="..\LtuBank.Models\LtuBank.Models.csproj" />
+    <ProjectReference Include="..\LtuBank.Platform\LtuBank.Platform.csproj" />
+  </ItemGroup>
+
+</Project>

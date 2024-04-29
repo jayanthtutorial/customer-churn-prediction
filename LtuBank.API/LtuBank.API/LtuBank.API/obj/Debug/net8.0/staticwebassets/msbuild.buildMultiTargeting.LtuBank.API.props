@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LtuBank.API.props" />
+</Project>
