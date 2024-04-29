@@ -1,0 +1,21 @@
+<div class="topspace"></div>
+
+<div class="cover"></div>
+
+<h1>ALL &nbsp; USERS</h1>
+<div class="all_users" style="height: 500px">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>BALANCE</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>{{ user.UserID }}</td>
+      <td>{{ user.Name }}</td>
+      <td>{{ user.Email }}</td>
+      <td>{{ user.Amount }}</td>
+    </tr>
+  </table>
+</div>

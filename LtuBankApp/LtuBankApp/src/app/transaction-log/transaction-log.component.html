@@ -1,0 +1,24 @@
+<div class="topspace"></div>
+
+<div class="cover"></div>
+
+<h1>TRANSACTION &nbsp; LOG</h1>
+<div class="all_users" style="height: 500px;">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>SENDER</th>
+            <th>RECEIVER</th>
+            <th>AMOUNT</th>
+            <th>DATE & TIME</th>
+        </tr>
+        <tr *ngFor="let transaction of tranLogs">
+            <td>{{ transaction.LogID }}</td>
+            <td>{{ transaction.Sender }}</td>
+            <td>{{ transaction.Receiver }}</td>
+            <td>{{ transaction.Amount }}</td>
+            <td>{{ transaction.TransactionDate | date:'medium' }}</td>
+        </tr>
+        <!-- You should statically populate the table rows here -->
+    </table>
+</div>

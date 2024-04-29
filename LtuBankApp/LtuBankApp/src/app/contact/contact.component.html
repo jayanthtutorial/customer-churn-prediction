@@ -1,0 +1,63 @@
+<div class="topspace"></div>
+<div class="cover"></div>
+
+<h1>CONTACT &nbsp; ME</h1>
+<div class="contact">
+  <div class="contactcontanner">
+    <div class="contanner">
+      <div class="heading">
+        <div class="icon"><i class="far fa-map"></i></div>
+        <div class="info">
+          <p>Address :</p>
+          <p id="contactinfo">21000 W 10 Mile Rd, Southfield, MI 48075</p>
+        </div>
+      </div>
+
+      <div class="heading">
+        <div class="icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="info">
+          <p>Phone :</p>
+          <p id="contactinfo">+12109907224</p>
+        </div>
+      </div>
+
+      <div class="heading">
+        <div class="icon"><i class="far fa-envelope"></i></div>
+        <div class="info">
+          <p>Email :</p>
+          <p id="contactinfo">pmougli&#64;ltu.edu</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="messageform">
+      <div class="form">
+        <form id="contact"
+        name="contact"
+        #contact="ngForm"
+        (ngSubmit)="onSubmit(contact)">
+          <style>
+            ::placeholder {
+              color: rgba(255, 255, 255, 0.7);
+            }
+          </style>
+
+          <input type="text" name="name" placeholder="NAME" required ngModel/>
+          <input type="email" name="email" placeholder="EMAIL" required ngModel/>
+          <input type="text" name="subject" placeholder="SUBJECT" required ngModel/>
+          <textarea
+            type="message"
+            name="message"
+            id="inputbox"
+            cols="30"
+            rows="5"
+            placeholder="MESSAGE"
+            required
+            ngModel
+          ></textarea>
+          <button type="submit">SEND MESSAGE</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

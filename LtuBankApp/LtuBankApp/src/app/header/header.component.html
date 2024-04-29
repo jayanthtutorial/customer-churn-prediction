@@ -1,0 +1,19 @@
+<div class="nevbar" id="nevbar">
+    <div class="logo">
+        <a routerLink="/" id="logo"><h1>Ltu Bank</h1></a>
+    </div>
+    <div class="menu" id="menu"> 
+        <ul class="nav navbar-nav item">
+            <li class="nav-item"><a class="nav-link" [routerLink]="['/home']">Home</a></li>
+            <li class="nav-item"><a class="nav-link" [routerLink]="['/prediction']">Prediction</a></li>
+            <li class="nav-item"><a class="nav-link" [routerLink]="['/allusers']">All Users</a></li>
+            <li class="nav-item"><a class="nav-link" [routerLink]="['/createuser']">Create User</a></li>
+            <li class="nav-item"><a class="nav-link" [routerLink]="['/transfermoney']">Transfer Money</a></li>
+            <li class="nav-item"><a class="nav-link" [routerLink]="['/transactionlog']">Transaction Log</a></li>
+            <li class="nav-item"><a class="nav-link" [routerLink]="['/contact']">Contact</a></li>
+        </ul> 
+    </div>
+    <div class="menuicon">
+        <i id="menuicon" (click)="toggleMenu()" class="fas fa-chevron-circle-down"> <span>MENU</span></i>
+    </div>
+</div>

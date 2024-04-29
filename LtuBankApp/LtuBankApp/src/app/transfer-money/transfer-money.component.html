@@ -1,0 +1,25 @@
+<div class="topspace"></div>
+
+<div class="cover"></div>
+
+<h1>TRANSFER &nbsp; MONEY</h1>
+<div class="all_users" style="height: 500px;">
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>BALANCE</th>
+            <th>OPERATION</th>
+        </tr>
+        <!-- This part will be dynamically generated based on your PHP logic -->
+        <tr *ngFor="let transfer of transferList">
+            <td>{{ transfer.ID }}</td>
+            <td>{{ transfer.Name }}</td>
+            <td>{{ transfer.Email }}</td>
+            <td>{{ transfer.Balance }}</td>
+            <td>{{ transfer.Operation }}</td>
+        </tr>
+    </table>
+</div>
+

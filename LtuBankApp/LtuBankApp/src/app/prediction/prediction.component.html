@@ -1,0 +1,117 @@
+<div class="topspace"></div>
+<div class="cover"></div>
+
+<form
+  id="prediction"
+  name="prediction"
+  #prediction="ngForm"
+  (ngSubmit)="onSubmit(prediction)"
+>
+  <!-- action="{{ url_for('predict')}}" -->
+  <h1>
+    Enter the Information Below and find if a Customer will Churn out or not
+  </h1>
+
+  <div class="contentform">
+    <div id="sendmessage">
+      Your message has been sent successfully. Thank you.
+    </div>
+
+    <div class="leftcontact">
+      <div class="form-group">
+        <p>Credit Score<span>*</span></p>
+        <span class="icon-case"></span>
+        <input name="CreditScore" name="CreditScore" type="number" required ngModel/>
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Age <span>*</span></p>
+        <span class="icon-case"></span>
+        <input name="Age" required="required" type="number" ngModel/>
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Tenure <span>*</span></p>
+        <span class="icon-case"></span>
+        <input name="Tenure" required="required" type="number" ngModel/>
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Enter the Account Balance: <span>*</span></p>
+        <span class="icon-case"></span>
+        <input name="Balance" required="required" type="number" ngModel/>
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Number of Products <span>*</span></p>
+        <span class="icon-case"></span>
+        <input name="NumOfProducts" required="required" type="number" ngModel/>
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Do the Customer have Credit Card? (1=Yes, 0=No) <span>*</span></p>
+        <span class="icon-case"></span>
+        <input name="HasCrCard" required="required"   ngModel/>
+        <div class="validation"></div>
+      </div>
+    </div>
+
+    <div class="rightcontact">
+      <div class="form-group">
+        <p>Is the Customer Active Member (1=Yes, 0=No)<span>*</span></p>
+        <span class="icon-case"></span>
+        <input name="IsActiveMember" required="required" ngModel/>
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Enter the Estimated Salary: <span>*</span></p>
+        <span class="icon-case"></span>
+        <input name="EstimatedSalary" required="required" ngModel/>
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Enter The Location: <span>*</span></p>
+        <span class="icon-case"></span>
+        <select name="Geography_Germany" required="required" ngModel>
+          <option value="Germany">Germany</option>
+          <option value="Spain">Spain</option>
+          <option value="France">France</option>
+        </select>
+        <div class="validation"></div>
+      </div>
+
+      <div class="form-group">
+        <p>Gender of Customer: <span>*</span></p>
+        <span class="icon-case"></span>
+        <select name="Gender_Male" id="resea" required="required" ngModel>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+        <div class="validation"></div>
+      </div>
+    </div>
+  </div>
+  <button
+    type="submit"
+    class="btn btn-lg btn-info mb-5 ml-5"
+    style="
+      box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+      background-image: linear-gradient(
+        to right,
+        #25aae1,
+        #4481eb,
+        #04befe,
+        #3f86ed
+      );
+    "
+  >
+    Predict whether the Customer will leave the bank or not?
+  </button>
+</form>
